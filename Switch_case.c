@@ -50,3 +50,47 @@ int main()
     }
     return 0;
 }
+
+
+
+
+//C program to use switch-case
+#include <stdio.h>
+
+int main() 
+{
+    char x;
+    printf("Enter any month initial : ");
+    scanf("%c", &x);
+    
+    switch(x)
+    {
+      case 'j':
+        printf("Jan, June, July");
+        break;
+      case 'f':
+        printf("Feburary");
+        break;
+      case 'm':
+        printf("March, may");
+        break;
+      case 'a':
+        printf("April, august");
+        break;
+      case 's':
+        printf("September");
+        break;
+      case 'o':
+        printf("October");
+        break;
+      case 'n':
+        printf("November");
+        break;
+      case 'd':
+        printf("December");
+        break;
+      default:
+        printf("Number out of range");
+    }
+    return 0;
+}
