@@ -4,7 +4,7 @@
 int main() 
 {
     int x;
-    printf("Enter any ny=umber from 1-12: ");
+    printf("Enter any number from 1-12: ");
     scanf("%d", &x);
     
     switch(x)
