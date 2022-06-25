@@ -99,6 +99,26 @@ int main() {
     
     return 0;
 }
+Q7
+#include <stdio.h>
+
+int main() {
+    int i,j, n;
+    
+    printf("Input upto the table number starting from 1: ");
+    scanf("%d",&n);
+    printf("Multiplication table from 1 to %d\n",n);
+    for(i=1;i<=10;i++)
+    {
+        for(j=1;j<=n;j++)
+     {
+        printf("%dx%d = %d, ",j,i,i*j);
+     }
+     printf("\n");
+    } 
+    
+    return 0;
+}
 
 Q8
 #include <stdio.h>
@@ -122,4 +142,90 @@ int main() {
     return 0;
 }
 
+Q9
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    
+
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=i;j++)
+     {
+        printf("*");
+     }
+     printf("\n");
+    } 
+    
+    return 0;
+}
+
+Q10
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    
+
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=i;j++)
+     {
+        if(j==1)
+        {
+            printf("1");
+        }
+        else if(j==2)
+        {
+            printf("2");
+        }
+        else if(j==3)
+        {
+            printf("3");
+        }
+        else
+        {
+            printf("4");
+        }
+     }
+     printf("\n");
+    } 
+    
+    return 0;
+}
+
+Q11
+#include <stdio.h>
+
+int main() {
+    int i,j;
+    
+
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=i;j++)
+     {
+        if(i==1)
+        {
+            printf("1");
+        }
+        else if(i==2)
+        {
+            printf("2");
+        }
+        else if(i==3)
+        {
+            printf("3");
+        }
+        else
+        {
+            printf("4");
+        }
+     }
+     printf("\n");
+    } 
+    
+    return 0;
+}
 
