@@ -422,6 +422,28 @@ int main() {
 }
 
 Q21
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    long int k=9,sum=0;
+    printf("Input number of terms: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%ld ",k);
+        if(i<n)
+        {
+            printf(" ");
+        }
+        sum=sum+k;
+        k=(k*10)+9;
+    }   
+    printf("\nThe Sum = %ld",sum);
+    
+    
+    return 0;
+}
 
 Q22
 #include <stdio.h>
@@ -448,6 +470,135 @@ int main() {
         printf("\n");
     } 
     
+    
+    
+    return 0;
+}
+Q23
+#include <stdio.h>
+
+int main() {
+    int i,n,x,fact=1,product=1;
+    float sum=0;
+    
+    printf("Input the value of x: ");
+    scanf("%d",&x);
+    
+    printf("Input the number of terms: ");
+    scanf("%d",&n);
+    
+    for(i=1;i<n;i++)
+    {
+        fact=fact*i;
+        product=product*x;
+        sum=sum+ (float)product/fact;
+    }   
+    sum=1+sum;
+    printf("The sum is %f",sum);
+
+    return 0;
+}
+
+Q24
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int i,n,x,power,sum,term,value;
+    int sign=-1;
+    printf("Input the value of x: ");
+    scanf("%d",&x);
+    
+    printf("Input the number of terms: ");
+    scanf("%d",&n);
+    sum=x;
+    
+    printf("The values of series:\n");
+    printf("%d\n",x);
+    for(i=1;i<n;i++)
+    {
+        power=2*i+1;
+        term=pow(x,power);
+        value=term*sign;
+        printf("%d\n",value);
+        sum=sum+value;
+        sign=sign*(-1);
+    }   
+   
+   printf("\nThe sum = %d",sum);
+
+    return 0;
+}
+
+Q25
+#include <stdio.h>
+
+int main() {
+    int i,n,k,sum=0;
+    printf("Input number of terms: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        k=i*i;
+        printf("%d\t",k);
+        sum=sum+k;
+    }
+    printf("\nThe Sum of square of natural numbers upto %d terms = %d",n,sum);
+    
+    
+    return 0;
+}
+
+Q26
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    long int k=1,sum=0;
+    printf("Input number of terms: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%ld ",k);
+        if(i<n)
+        {
+            printf("+ ");
+        }
+        sum=sum+k;
+        k=(k*10)+1;
+    }   
+    printf("\nThe Sum = %ld",sum);
+    
+    
+    return 0;
+}
+
+Q27
+#include <stdio.h>
+
+int main() {
+    int i,n,k,sum=0;
+    printf("Input the number: ");
+    scanf("%d",&n);
+    printf("The poitive divisors of %d are: ",n);
+    for(i=1;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            printf("%d ",i);
+            sum=sum+i;
+        }
+    }   
+    if(sum==n)
+    {
+        printf("\n%d is a perfect number",n);
+    }
+    else
+    {
+        printf("\n%d is not a perfect number",n);
+    }
+
+        
     
     
     return 0;
