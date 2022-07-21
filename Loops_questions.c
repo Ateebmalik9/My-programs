@@ -171,22 +171,7 @@ int main() {
     {
         for(j=1;j<=i;j++)
      {
-        if(j==1)
-        {
-            printf("1");
-        }
-        else if(j==2)
-        {
-            printf("2");
-        }
-        else if(j==3)
-        {
-            printf("3");
-        }
-        else
-        {
-            printf("4");
-        }
+        printf("%d",j);
      }
      printf("\n");
     } 
@@ -205,22 +190,7 @@ int main() {
     {
         for(j=1;j<=i;j++)
      {
-        if(i==1)
-        {
-            printf("1");
-        }
-        else if(i==2)
-        {
-            printf("2");
-        }
-        else if(i==3)
-        {
-            printf("3");
-        }
-        else
-        {
-            printf("4");
-        }
+        printf("%d",i);
      }
      printf("\n");
     } 
@@ -239,7 +209,7 @@ int main() {
     {
         for(j=1;j<=i;j++)
      {
-        printf("%d",k++); //k++ means post increment
+        printf("%d ",k++); //k++ means post increment
      }
      printf("\n");
     } 
