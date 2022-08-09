@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int i,n,flag=0;
+    int i;
     int x[5];
     for(i=0;i<5;i++)
     {
