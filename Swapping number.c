@@ -2,27 +2,36 @@
 #include <stdio.h>
 
 int main() {
-    //Swapping with 3rd variable
-    int a,b,c;
-    a=5;
-    b=10;
-    printf("a=%d and b=%d",a,b);
-    c=a;
-    a=b;
-    b=c;
-    printf("\nSwapping\n");
-    printf("a=%d and b=%d\n",a,b);
-    
-    //Swapping without 3rd variable
-    int d,e;
-    d=6;
-    e=10;
-    printf("\nd=%d and e=%d",d,e);
-    d=d+e;
-    e=d-e;
-    d=d-e;
-    printf("\nSwapping\n");
-    printf("d=%d and e=%d",d,e);
-    
+    int i,j,n,temp;
+    printf("How many numbers are in your array? ");
+    scanf("%d",&n);
+    int x[n];
+    printf("Enter elements of array\n");
+    for(i=0;i<n;i++)
+    {
+        printf("Enter element number %d: ",i+1);
+        scanf("%d",&x[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",x[i]);
+    }
+    for(i=0;i<n-1;i++)
+    {
+        for(j=0;j<n-1-i;j++)
+        {
+            if(x[j]>=x[j+1]) // for descending order put <= sign
+            {
+                temp=x[j];
+                x[j]=x[j+1];
+                x[j+1]=temp;
+            }
+        }
+    }
+    printf("\nSorted array\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",x[i]);
+    }
     return 0;
 }
