@@ -38,5 +38,5 @@ void sort( int x[], int n)
     {
         printf("%d",x[i]);
     }
-   return 0; 
+ 
 }
